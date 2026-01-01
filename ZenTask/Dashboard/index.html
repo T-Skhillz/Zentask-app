@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="Header">
+        <h1>My Tasks</h1>
+        <p class="NumberOfActiveTasks"><span>0</span> tasks remaining</p>
+    </div>
+
+    <form class="DashboardInputs" id="TaskForm">
+        <input id="TaskInput" type="text" name="TaskInput" placeholder="Type a new task..." required>
+        <select id="CategoryInput">
+            <option value="">Select a Category</option>
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="business">Business</option>
+            <option value="personal">Personal</option>
+            <option value="recreational">Recreational</option>
+        </select>
+        <button class="AddTaskBtn" type="submit">Add Task</button>
+    </form>
+
+    <div  class="task-list"></div>
+
+    <template class="task-template">
+        <div class="task-card">
+            <input type="checkbox" class="task-check">
+            <div class="task-info">
+                <span class="task-title"></span>
+                <span class="task-category"></span>
+            </div>
+            <button class="delete-btn">🗑</button>
+        </div>
+    </template>
+    
+    <script src="script.js"></script>
+</body>
+</html>

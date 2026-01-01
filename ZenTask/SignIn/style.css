@@ -1,0 +1,75 @@
+body{
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: sans-serif;
+    /* background-color: #0a160f;  */
+    background-color: rgb(34, 22, 1);
+    justify-content:center; 
+    align-items: center;
+}
+
+.SignInWelcomeText{
+    color: white;
+    display: flex; 
+    flex-direction:column; 
+    font-size: clamp(1rem, 1.5vw + 1vh, 3rem); 
+    justify-content:center; 
+    align-items: center;
+}
+.SignInWelcomeText p{
+    opacity: 0.7;
+}
+
+#SignInInputForm{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 2rem;
+    border: 1px solid; 
+    border-radius: 10px; 
+    background-color: rgb(114, 79, 14); 
+    opacity: 0.9; 
+    color: white; 
+    border-color: grey; 
+    height: auto;
+    width: 90%; 
+    max-width: 400px; 
+
+} 
+
+.SignInUsername, .SignInPassword, .ConfirmPassword, .UserEmail {
+    width: 100%;
+    padding: 0.8rem 1rem; 
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: #2a3a33;
+    color: white;
+    box-sizing: border-box;
+    text-align: left;
+}
+.SignInButton{
+    display: flex;           
+    justify-content: center; 
+    align-items: center;    
+    align-self: center; 
+    width: 100%;
+    height: 100%;
+    color: #0a160f; /* Dark text is easier to read on green */
+    /* background-color: #2bee79; */
+    background-color: orange;
+    padding: 0.8rem 1rem;
+    font-size: clamp(0.9rem, 1vw + 0.5vh, 1.2rem);
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+}
+
+.SignInButton:hover {
+    background-color: #24cc68;
+    transform: translateY(-2px);
+}
+.login{
+    margin-top: 2rem;
+}

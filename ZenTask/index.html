@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="LoginWelcomeText">
+        <h2>Welcome back</h2><br>
+        <p>Enter your details to access your workspace</p>
+    </div>
+    
+    <form id="LoginForm" autocomplete="off">
+        <label for="username">Username:</label><br>
+        <input class="LoginUsername" type="text" id="username" name="username" placeholder="Enter your username">
+        <label for="password">Password:</label>
+        <input class="LoginPassword" type="password" id="password" name="password" placeholder="Enter your Password">
+        <button class="LoginButton">
+            <span class="button-text">Log In</span>
+            <div class="spinner"></div>
+        </button>
+        <span class="sign-in">Don't have an account?
+            <a href="SignIn/index.html">Sign In</a>
+        </span>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
